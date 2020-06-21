@@ -1,8 +1,8 @@
-To run the penguin apps cd into the folder of choice & 
+To run the penguin apps in a folder of choice run the following commands
 
 ```
 $ git clone https://github.com/moshez/penguin-bit-by-bit.git
-$ cd penguin-bit-by-bit
+$ cd children-camp && cd penguin-bit-by-bit
 $ python -m venv venv
 $ source ./venv/bin/activate # for windows use .\env\Scripts\activate
 $ pip install -r requirements.txt
