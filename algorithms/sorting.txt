@@ -1,0 +1,28 @@
+bubble
+
+Check if the item next to me is smaller
+Then go to the next pair and so on and so forth
+
+insertion
+Pick the next item and put it in the correct position
+
+for i = 2:n,
+    for (k = i; k > 1 and a[k] < a[k-1]; k--)
+        swap a[k,k-1]
+    → invariant: a[1..i] is sorted
+end
+
+selection
+Always find smallest elem in arr 
+Place at beginning 
+
+for i = 1:n,
+    k = i
+    for j = i+1:n, if a[j] < a[k], k = j
+    → invariant: a[k] smallest of a[i..n]
+    swap a[i,k]
+    → invariant: a[1..i] in final position
+end
+
+merge
+An example of merge sort. First divide the list into the smallest unit (1 element), then compare each element with the adjacent list to sort and merge the two adjacent lists. Finally all the elements are sorted and merged.

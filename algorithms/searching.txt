@@ -1,0 +1,8 @@
+A linear search sequentially checks each element of the list until it finds an element that matches the target value. If the algorithm reaches the end of the list, the search terminates unsuccessfully.
+
+Binary search requires the array to be sorted
+Then you compare the elem in the middle of the array with the target value
+If so return the position
+If less continue in lower half of array, 
+if greater continue in the upper half
+
