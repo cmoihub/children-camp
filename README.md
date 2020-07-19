@@ -1,4 +1,7 @@
-Inspired by https://opensource.com/article/20/5/python-games
+Objective
+Run the files in the math folder
+
+<!-- Inspired by https://opensource.com/article/20/5/python-games
 To run the penguin apps in a folder of choice run the following commands
 
 ### Linux-based Systems e.g. Macs & Chromebooks
@@ -14,9 +17,10 @@ $ jupyter lab .
 ### Windows-based Systems
 ```
 $ git clone https://github.com/cmoihub/children-camp.git
+$ cd Documents\Github\children-camp if you used Github desktop
 $ cd children-camp && cd penguin-bit-by-bit
-$ python3 -m venv venv
+$ python -m venv venv
 $ .\venv\Scripts\activate
 $ pip install -r requirements.txt
 $ jupyter lab .
-```
+``` -->
