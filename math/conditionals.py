@@ -130,7 +130,7 @@ bored = True
 if bored:
     pass
 
-# Challenge
+# Homework
 print("what was your score in math")
 age = input("--> ")
 print(age)
