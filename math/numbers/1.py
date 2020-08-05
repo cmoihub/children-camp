@@ -4,7 +4,7 @@ separator = ", "
 print(separator.join(numList))
 
 
-# Challenge: create a function that adds up items in the following lists
+# How'll we add up item in the following lists
 # and print your results
 list_one = [100, 2]
 list_two = [33, 1, 45]

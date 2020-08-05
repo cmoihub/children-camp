@@ -1,0 +1,79 @@
+# Go to https://repl.it/languages/python_turtle
+# Execute the following 4 times
+"""
+import turtle
+t = turtle.Turtle()
+i = 4
+while i != 0:
+  t.forward(100)
+  t.right(90)
+  i-=1
+"""
+
+# Draw a rectangle
+# Draw a hexagon
+"""
+i = 8
+while i != 0:
+  t.forward(100)
+  t.right(45)
+  t.circle(60)
+  i-=1
+"""
+
+# Colors
+# for c in ['red', 'green', 'yellow', 'blue']:
+#     t.color(c)
+#     t.forward(75)
+#     t.left(90)
+
+# t.dot(i) - make a filled in circle
+
+#  turtle.bgcolor("blue") - change background color
+
+"""
+import turtle
+
+t = turtle.Turtle()
+
+for c in ['red', 'green', 'yellow', 'blue']:
+    t.color(c)
+    t.forward(75)
+    t.left(90)
+"""
+
+# t.fillcolor("red") - change the turtle's color/fill
+# t.pencolor("red") - change the turtle's pen/outline
+# t.color("green", "red")
+"""
+This will fill up the square once done
+t.begin_fill()
+for c in ['red', 'green', 'yellow', 'blue']:
+    t.color(c)
+    t.forward(75)
+    t.left(90)
+t.end_fill()
+"""
+
+# t.shape(shape) - shapes = circle, square, arrow, turtle, triangle, classic
+# undo() - go back
+
+# Speeds
+"""
+“fastest”: 0
+“fast”: 10
+“normal”: 6
+“slow”: 3
+“slowest”: 1
+"""
+
+# clear() - clear the screen
+# penup() - stop drawing keep moving
+# pendown() - keep drawing
+
+# reset() - resets state
+
+# stamp() - leave an imprint of the turtle
+
+# clone() - duplicate the turtle
+
