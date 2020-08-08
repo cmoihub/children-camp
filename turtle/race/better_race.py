@@ -1,10 +1,15 @@
 import turtle
 import random
-import functions
 
-# s = turtle.getscreen()
 x = 200
 y = 100
+
+
+def create_turtle(color, shape):
+    t = turtle.Turtle()
+    t.color(color)
+    t.shape(shape)
+    return t
 
 
 def go_home(player, x_pos, y_pos):
@@ -12,15 +17,15 @@ def go_home(player, x_pos, y_pos):
     player.goto(x_pos, y_pos)
 
 
-def draw_circle(player, x_return, y_return):
+def make_target(player, target):
+    player.goto(300, target)
     player.pendown()
-    player.circle(40)
-    go_home(player, x_return, y_return)
+    player.circle(35)
 
 
-def go_forward(player):
-    player_turn = input("Press 'Enter' to roll player's die")
-    die_outcome = random.choice(die)
+def go_forward(player, name):
+    player_turn = input("Press 'Enter' to roll " + name + "'s die")
+    die_outcome = random.choice([1, 2, 3, 4, 5, 6])
     print("The result of the die roll is: ")
     print(die_outcome)
     print("The number of the steps will be: ")
@@ -28,23 +33,18 @@ def go_forward(player):
     player.fd(20 * die_outcome)
 
 
-cmoi = turtle.Turtle()
-cmoi.color("red")
-cmoi.shape("turtle")
+# setup cmoi
+cmoi = create_turtle("red", "turtle")
+go_home(cmoi, -x, y)
+make_target(cmoi, 60)
 go_home(cmoi, -x, y)
 
-mitch = cmoi.clone()
-mitch.shape("square")
-mitch.color("red")
+# setup mitch
+mitch = create_turtle("red", "square")
+go_home(mitch, -x, -y)
+make_target(mitch, -140)
 go_home(mitch, -x, -y)
 
-cmoi.goto(300, 60)
-draw_circle(cmoi, -x, y)
-
-mitch.goto(300, -140)
-draw_circle(mitch, -x, -y)
-
-die = [1, 2, 3, 4, 5, 6]
 for i in range(20):
     if cmoi.pos() >= (300, 100):
         print("CMOI wins!")
@@ -53,9 +53,6 @@ for i in range(20):
         print("Mitch wins!")
         break
     else:
-        go_forward(cmoi)
-        go_forward(mitch)
+        go_forward(cmoi, "cmoi")
+        go_forward(mitch, "mitch")
 
-
-# def funcname(parameter_list):
-#     pass

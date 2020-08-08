@@ -7,10 +7,12 @@ speed(0)
 penup()
 goto(-140, 140)
 
-# draw the lines
+# setup the race
 for step in range(15):
+    # label positions
     write(step, align="center")
     right(90)
+    # draw lines
     for num in range(8):
         penup()
         forward(10)
@@ -62,7 +64,7 @@ rotate_turtle(nissi, 30, 12)
 
 turtles = [asael, anslem, ore, nissi]
 
-# begin the race
+# run the race
 for turn in range(100):
     for turtle in turtles:
         turtle.forward(randint(1, 5))
