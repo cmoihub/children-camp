@@ -1,3 +1,4 @@
+# Craig's
 num = int(input(" how many elements do you want to the dictionary?"))
 num = num * 2
 a = {}
@@ -22,7 +23,7 @@ while num > 0:
 
 print(a)
 
-
+# Divine's
 my_dict_1 = {}
 like_list = []
 dislike_list = []
