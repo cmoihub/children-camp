@@ -1,8 +1,6 @@
 import turtle
 import random
 
-y = 100
-
 # setup cmoi
 cmoi = turtle.Turtle()
 cmoi.color("red")
