@@ -39,17 +39,17 @@ idna==2.9
     # via
     #   hyperlink
     #   requests
-incremental==17.5.0
+incremental==21.3.0
     # via twisted
 ipykernel==5.2.1
     # via notebook
+ipython==7.14.0
+    # via ipykernel
 ipython-genutils==0.2.0
     # via
     #   nbformat
     #   notebook
     #   traitlets
-ipython==7.14.0
-    # via ipykernel
 jedi==0.17.0
     # via ipython
 jinja2==2.11.2
@@ -74,10 +74,10 @@ jupyter-core==4.6.3
     #   nbconvert
     #   nbformat
     #   notebook
-jupyterlab-server==1.1.1
-    # via jupyterlab
 jupyterlab==2.1.1
     # via -r requirements.in
+jupyterlab-server==1.1.1
+    # via jupyterlab
 markupsafe==1.1.1
     # via jinja2
 mistune==0.8.4
@@ -102,10 +102,10 @@ pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
     # via ipython
-ppb-vector==1.0
-    # via ppb
 ppb==0.8.0
     # via txppb
+ppb-vector==1.0
+    # via ppb
 prometheus-client==0.7.1
     # via notebook
 prompt-toolkit==3.0.5
@@ -120,8 +120,6 @@ pygments==2.7.4
     # via
     #   ipython
     #   nbconvert
-pyhamcrest==2.0.2
-    # via twisted
 pyparsing==2.4.7
     # via packaging
 pyrsistent==0.16.0
@@ -168,17 +166,19 @@ traitlets==4.3.3
     #   nbconvert
     #   nbformat
     #   notebook
-twisted==20.3.0
+twisted==22.2.0
     # via txppb
 txppb==0.1
     # via -r requirements.in
+typing-extensions==4.1.1
+    # via twisted
 urllib3==1.25.9
     # via requests
 wcwidth==0.1.9
     # via prompt-toolkit
 webencodings==0.5.1
     # via bleach
-zope.interface==5.1.0
+zope-interface==5.1.0
     # via twisted
 
 # The following packages are considered to be unsafe in a requirements file:
