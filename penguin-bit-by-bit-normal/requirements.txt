@@ -74,11 +74,11 @@ jupyter-core==4.11.1
     #   nbconvert
     #   nbformat
     #   notebook
-jupyterlab==2.1.1
+jupyterlab==2.2.10
     # via -r requirements.in
 jupyterlab-pygments==0.2.2
     # via nbconvert
-jupyterlab-server==1.1.1
+jupyterlab-server==1.2.0
     # via jupyterlab
 markupsafe==1.1.1
     # via jinja2
