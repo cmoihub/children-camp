@@ -39,7 +39,7 @@ idna==2.9
     # via
     #   hyperlink
     #   requests
-incremental==17.5.0
+incremental==21.3.0
     # via twisted
 ipykernel==5.2.1
     # via notebook
@@ -129,8 +129,6 @@ pygments==2.7.4
     # via
     #   ipython
     #   nbconvert
-pyhamcrest==2.0.2
-    # via twisted
 pyparsing==2.4.7
     # via packaging
 pyrsistent==0.16.0
@@ -177,10 +175,12 @@ traitlets==5.3.0
     #   nbconvert
     #   nbformat
     #   notebook
-twisted==20.3.0
+twisted==22.4.0
     # via txppb
 txppb==0.1
     # via -r requirements.in
+typing-extensions==4.3.0
+    # via twisted
 urllib3==1.25.9
     # via requests
 wcwidth==0.1.9
