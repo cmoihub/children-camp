@@ -43,7 +43,7 @@ incremental==17.5.0
     # via twisted
 ipykernel==5.2.1
     # via notebook
-ipython==7.14.0
+ipython==7.16.3
     # via ipykernel
 ipython-genutils==0.2.0
     # via
